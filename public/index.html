@@ -6,54 +6,55 @@
     </head>
     <body>
         <h1>Patient Data</h1>
-        
+        <form id="patientData">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Full Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <label for="birth">Date of Birth</label>
+            <input type="date" id="birth" name="birth" required>
+
+            <label for="height">Height</label>
+            <input type="number" id="height" name="height" min="30" max="250">
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="Other">
+            </fieldset>
+
+            <label for="bloodType">Blood Type</label>
+            <select id="bloodType" name="bloodType">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select> 
+
+            <label for="history">Medical History</label>
+            <textarea id="history" name="history" placeholder="(e.g., allergies)"></textarea>
+
+            <label>
+                <input type="checkbox" name="consent" required>I accept the terms
+            </label>
+
+            <button type="submit">Finish</button>
+        </form>
+        <script src="app.js"></script>
     </body>
-</html>
-
-
-<div class = persona>
-    <label para = "fullname">Full Name</label>
-    <input tipo = "text" id="name" name = "fullname" required placeholder = "Full Name"
-</div>
-
-<div class = persona>
-    <label para = "email"> Email</label>
-    <input tipo = "email" id="email" name = "email" required
-</div>
-
-<div class = persona>
-    <label para = "password">Password</label>
-    <input tipo = "password" id="password" name = "password" minlength="8"
-</div>
-
-<div class = persona>
-    <label para = "birth">Date of Birth</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
-
-<div class = persona>
-    <label para = "height">Height</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
-
-<div class = persona>
-    <label para = "birth">Date of Birth</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
-
-<div class = persona>
-    <label para = "birth">Date of Birth</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
-
-<div class = persona>
-    <label para = "birth">Date of Birth</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
-
-<div class = persona>
-    <label para = "birth">Date of Birth</label>
-    <input tipo = "date" id="birth" name = "birth" required
-</div>
+</html> 
 
 
