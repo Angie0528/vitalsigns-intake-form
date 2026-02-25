@@ -8,6 +8,7 @@ app.use(express.static('public'));
 
 app.post('/api/registro', (req, res) => {
     const patientData = req.body;
+    console.log("Recibido", patientData);
     res.json({ message: "Registro Listo", data:patientData });       
 });
 
